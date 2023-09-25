@@ -1,0 +1,42 @@
+using System;
+
+public class Solution {
+    public int solution(string ineq, string eq, int n, int m) {
+        int answer = 0;
+        if(n > m)
+        {
+            if(ineq == ">")
+            {
+                answer = 1;
+            }
+            else
+            {
+                answer = 0;
+            }
+        }
+        else if(n < m)
+        {
+            if(ineq == "<")
+            {
+                answer = 1;
+            }
+            else
+            {
+                answer = 0;
+            }
+        }
+        else if(n == m)
+        {
+            if(eq == "=")
+            {
+                answer = 1;
+            }
+            else
+            {
+                answer = 0;
+            }
+        }
+        
+        return answer;
+    }
+}
